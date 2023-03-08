@@ -1,4 +1,4 @@
-# MORALIS API SERVER
+# NFT MARKETPLACE
 
 ## Getting started
 

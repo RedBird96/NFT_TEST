@@ -1,4 +1,4 @@
-# NFT MARKETPLACE
+# MORALIS API SERVER
 
 This is Moralis API server to help webapp
 
