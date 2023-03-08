@@ -12,6 +12,11 @@ const api_key = process.env.API_KEY;
 app.use(express.json());
 app.use(cors());
 
+/**
+ * Fetch all nfts
+ * @param req - address, chain, cursor
+ * @param res - nft, cursor, error
+ */
 app.get("/allNFTs", async(req, res) => {
   try{
     const {query} = req;
@@ -51,6 +56,11 @@ app.get("/allNFTs", async(req, res) => {
   }
 });
 
+/**
+ * Fetch all nfts by collection info
+ * @param req - address, chain, collections, cursor
+ * @param res - nft, cursor, error
+ */
 app.get("/allNFTsByCollections", async(req, res) => {
   try{
     const {query} = req;
@@ -94,6 +104,11 @@ app.get("/allNFTsByCollections", async(req, res) => {
   }  
 });
 
+/**
+ * Fetch all collections
+ * @param req - address, chain, cursor
+ * @param res - collections, cursor, error
+ */
 app.get("/allCollections", async(req, res) => {
   try{
     const {query} = req;
