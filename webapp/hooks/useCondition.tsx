@@ -18,7 +18,7 @@ const ConditionContext: React.Context<null | ConditionInterface> =
 export function ConditionProvider({children}:any) {
 
   const [tokenAddess, setTokenAddress] = useState<string[]>([]);
-  const [address, setAddress] = useState<string>("0xd8da6bf26964af9d7eed9e03e53415d37aa96045");
+  const [address, setAddress] = useState<string>("");
   const [cursor, setCursor] = useState<string>("");
   const [collectionCursor, setCollectionCursor] = useState<string>("");
   return(

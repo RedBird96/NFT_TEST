@@ -12,7 +12,7 @@ const api_key = process.env.API_KEY;
 app.use(express.json());
 app.use(cors());
 
-app.get("/allNFTAndCollections", async(req, res) => {
+app.get("/allNFTs", async(req, res) => {
   try{
     const {query} = req;
     let NFTs;
@@ -51,7 +51,7 @@ app.get("/allNFTAndCollections", async(req, res) => {
   }
 });
 
-app.get("/allNFTByCollections", async(req, res) => {
+app.get("/allNFTsByCollections", async(req, res) => {
   try{
     const {query} = req;
     let NFTs;

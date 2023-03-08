@@ -33,7 +33,6 @@ function useCollections(chain: number): {
 
     fetchCollection();
 
-    console.log('fetchCollection collections', collections);
     return {
       data: or(collections, []),
       isLoading: and(!error, !response),

@@ -18,3 +18,7 @@ yarn install && yarn dev
 2. User can filter by selecting collections
 
 ![Screenshot](readme/screenshot2.png)
+
+3. User can see the nft detail information and can go to opensea link
+
+![Screenshot](readme/screenshot3.png)

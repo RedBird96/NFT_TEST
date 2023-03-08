@@ -66,8 +66,8 @@ export async function getNFTs(address:string, chain:number, collections: string[
   try{
     const col = collections.join('*');
     let url = collections.length == 0 ? 
-      `${API_SERVER}/allNFTAndCollections/?address=${address}&chain=${chain}&cursor=${cursor}`:
-      `${API_SERVER}/allNFTByCollections/?address=${address}&chain=${chain}&collections=${col}&cursor=${cursor}`;
+      `${API_SERVER}/allNFTs/?address=${address}&chain=${chain}&cursor=${cursor}`:
+      `${API_SERVER}/allNFTsByCollections/?address=${address}&chain=${chain}&collections=${col}&cursor=${cursor}`;
 
     const response = await axios.get(url);
     const error = response.data.result.error;

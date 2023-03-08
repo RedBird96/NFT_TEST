@@ -22,8 +22,8 @@ function useFetchAssets(props: Props): {
   const { address, chain, collections } = props;
   const col = collections.join('&');
   let url = collections.length == 0 ? 
-    `${API_SERVER}/allNFTAndCollections/?address=${address}&chain=${chain}`:
-    `${API_SERVER}/allNFTByCollections/?address=${address}&chain=${chain}&collections=${col}`;
+    `${API_SERVER}/allNFTs/?address=${address}&chain=${chain}`:
+    `${API_SERVER}/allNFTsByCollections/?address=${address}&chain=${chain}&collections=${col}`;
 
   const { data, error } = useSWR(
     url,
